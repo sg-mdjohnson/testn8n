@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "id": "k40w4ylAHFxcpm4u",
+      "name": "Dev",
+      "parentFolderId": null,
+      "homeProjectId": "AImJPEsTLWXpEVBr",
+      "createdAt": "2025-04-25T19:47:03.171Z",
+      "updatedAt": "2025-04-25T19:47:03.171Z"
+    },
+    {
+      "id": "P2IzY4h8S3sRiHNO",
+      "name": "PROD",
+      "parentFolderId": null,
+      "homeProjectId": "AImJPEsTLWXpEVBr",
+      "createdAt": "2025-04-25T19:47:09.558Z",
+      "updatedAt": "2025-04-25T19:47:09.558Z"
+    },
+    {
+      "id": "sTfmGH8YnmbzgXAD",
+      "name": "DEV",
+      "parentFolderId": null,
+      "homeProjectId": "gIFd0z4jUAg4KWvT",
+      "createdAt": "2025-04-25T19:44:07.544Z",
+      "updatedAt": "2025-04-25T19:47:40.855Z"
+    },
+    {
+      "id": "Ejl5daELlVJ1FQx9",
+      "name": "PROD",
+      "parentFolderId": null,
+      "homeProjectId": "gIFd0z4jUAg4KWvT",
+      "createdAt": "2025-04-25T19:44:03.511Z",
+      "updatedAt": "2025-04-25T19:47:50.238Z"
+    }
+  ]
+}

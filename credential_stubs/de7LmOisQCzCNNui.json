@@ -1,0 +1,13 @@
+{
+  "id": "de7LmOisQCzCNNui",
+  "name": "OpenAi account First 1",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "gIFd0z4jUAg4KWvT",
+    "teamName": "BMW-Rates"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "V8CjOWxHNf4fcfy4",
+  "name": "OpenAi MDJ account",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "",
+    "organizationId": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "personalEmail": "infrastructurenotifications@sgintl.com"
+  }
+}

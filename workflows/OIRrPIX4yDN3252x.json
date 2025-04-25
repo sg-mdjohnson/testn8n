@@ -1,0 +1,104 @@
+{
+  "id": "OIRrPIX4yDN3252x",
+  "name": "bmw app 1",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9d501ee7-b9c2-461e-aa51-a9d8173111b3",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "path": "d8953232-b8b1-4910-8b3e-cda1a51bf393",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        20,
+        200
+      ],
+      "id": "94cc17e4-f462-4770-b3d4-913a9d6e7e87",
+      "name": "Webhook",
+      "webhookId": "d8953232-b8b1-4910-8b3e-cda1a51bf393"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        60
+      ],
+      "id": "658a68e3-83d8-439e-ade5-e6dfd6aec6aa",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        40
+      ],
+      "id": "e3302746-5115-48b9-a6a8-3726730ced0c",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "9b6efdb1-4d6f-401f-8a48-f4d8f32a871f",
+  "owner": {
+    "type": "team",
+    "teamId": "gIFd0z4jUAg4KWvT",
+    "teamName": "BMW-Rates"
+  },
+  "parentFolderId": "Ejl5daELlVJ1FQx9"
+}
