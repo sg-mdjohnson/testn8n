@@ -62,6 +62,19 @@
           "name": "OpenAi account First 1"
         }
       }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        800,
+        0
+      ],
+      "id": "fa91a30b-4da6-4f3f-94d9-6f105ef96bc7",
+      "name": "Edit Fields"
     }
   ],
   "connections": {
@@ -97,13 +110,24 @@
           }
         ]
       ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
     "executionOrder": "v1"
   },
   "triggerCount": 0,
-  "versionId": "d5408317-26eb-4c4c-a075-d1a9f79c6573",
+  "versionId": "d31e86f0-dc03-4413-9fa7-62e3cba41165",
   "owner": {
     "type": "team",
     "teamId": "gIFd0z4jUAg4KWvT",
